@@ -30,6 +30,8 @@ function licor = licorify(filename)
 % (c) Jack Peterson (jack@tinybike.net), 4/26/2013
 
 licor = struct;
+
+%% Check for .81x extension, and open the Licor file
 if strcmp(filename(end-3:end), '.81x')
     fid = fopen(filename);
 else
